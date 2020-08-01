@@ -3,6 +3,9 @@
   justify-content: space-between;
   padding: 7px;
   height: 35px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: #202020;
 }
 .header__menu {

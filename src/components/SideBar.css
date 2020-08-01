@@ -1,7 +1,15 @@
 .SideBar {
-  flex: 0.18;
+  width: 15%;
   background-color: #181818;
   color: #c7c7c7;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top: 49px;
 }
 .SideBar > hr {
   height: 0.2px;
@@ -9,4 +17,16 @@
   background-color: gray;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(58, 56, 56);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
