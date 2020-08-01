@@ -12,11 +12,12 @@
   padding-right: 30px;
 }
 .VideoCard__text {
+  flex-direction: row;
   margin-left: 15px;
 }
 .VideoCard__text > h4 {
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .VideoCard__text > p {
   font-size: 14px;
