@@ -14,8 +14,8 @@ const Header = () => {
         <MenuIcon className="header__material__icon" />
       </div>
       <div className="header__input">
-        <input type="text" />
-        <SearchIcon className="header__material__icon" />
+        <input type="text" placeholder="search" />
+        <SearchIcon className="header__search__icon" />
       </div>
       <div className="header__avatar">
         <VideoCallIcon className="header__material__icon" />
