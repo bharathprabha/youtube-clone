@@ -1,10 +1,12 @@
 .SideBar {
-  flex: 0.2;
+  flex: 0.18;
+  background-color: #181818;
+  color: #c7c7c7;
 }
 .SideBar > hr {
-  height: 1px;
+  height: 0.2px;
   border: 0;
-  background-color: lightgrey;
+  background-color: gray;
   margin-top: 10px;
   margin-bottom: 10px;
 }

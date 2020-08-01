@@ -13,7 +13,7 @@
   font-weight: 300;
 }
 .SideBarRow:hover {
-  background-color: lightgray;
+  background-color: #4d4d4d;
   cursor: pointer;
 }
 .SideBarRow:hover > .SideBarRow__icon {
@@ -23,7 +23,7 @@
   font-weight: bolder;
 }
 .SideBarRow.selected {
-  background-color: lightgray;
+  background-color: #4d4d4d;
 }
 .SideBarRow.selected > .SideBarRow__icon {
   color: red;
