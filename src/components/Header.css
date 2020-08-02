@@ -45,7 +45,9 @@
 .header__small__avatar {
   display: none;
 }
-
+.header__addButton {
+  margin-right: 20px !important;
+}
 @media only screen and (max-width: 500px) {
   .header__avatar {
     display: none;
@@ -55,6 +57,10 @@
   }
   .header__addbutton {
     display: flex;
+  }
+  .header__material__icon {
+    color: #ffffff;
+    margin-right: 0;
   }
   .header__small__avatar {
     display: flex;

@@ -5,6 +5,7 @@ import Posts from "./components/Posts";
 import SideBar from "./components/SideBar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SmallSideBAr from "./components/SmallSideBAr";
+import AddForm from "./components/AddForm";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
             </Route>
             <Route path="/sidebar">
               <SmallSideBAr />
+            </Route>
+            <Route path="/addform">
+              <AddForm />
             </Route>
           </div>
         </Switch>

@@ -7,6 +7,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 const Header = () => {
   return (
@@ -21,12 +22,28 @@ const Header = () => {
         <SearchIcon className="header__search__icon" />
       </div>
       <div className="header__avatar">
+        <Link to="/addform">
+          <Button
+            className="header__addButton"
+            variant="contained"
+            color="secondary"
+          >
+            Secondary
+          </Button>
+        </Link>
+
         <VideoCallIcon className="header__material__icon" />
         <AppsIcon className="header__material__icon" />
         <NotificationsIcon className="header__material__icon" />
         <Avatar className="header__material__icon" />
       </div>
-      <div className="header__addbutton">hello</div>
+      <div className="header__addbutton">
+        <Link to="/addform">
+          <Button variant="contained" color="secondary">
+            Secondary
+          </Button>
+        </Link>
+      </div>
 
       <div className="header__small__avatar">
         <Avatar className="header__small__avatar__icon" />
