@@ -39,3 +39,33 @@
   color: #ffffff;
   margin-right: 30px;
 }
+.header__addbutton {
+  display: none;
+}
+.header__small__avatar {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .header__avatar {
+    display: none;
+  }
+  .header__input {
+    display: none;
+  }
+  .header__addbutton {
+    display: flex;
+  }
+  .header__small__avatar {
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center;
+  }
+  .header__small__avatar__icon {
+    margin: 3px !important;
+    padding: 3px !important;
+    height: 30px !important;
+    width: 30px !important;
+  }
+}

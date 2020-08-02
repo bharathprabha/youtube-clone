@@ -23,6 +23,11 @@ const Header = () => {
         <NotificationsIcon className="header__material__icon" />
         <Avatar className="header__material__icon" />
       </div>
+      <div className="header__addbutton">hello</div>
+
+      <div className="header__small__avatar">
+        <Avatar className="header__small__avatar__icon" />
+      </div>
     </div>
   );
 };
