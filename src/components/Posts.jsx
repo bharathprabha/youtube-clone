@@ -11,7 +11,6 @@ const Posts = () => {
       setVideos(snopshot.docs.map((doc) => ({ post: doc.data(), id: doc.id })));
     });
   }, []);
-  console.log(Videos);
   return (
     <div className="posts">
       <h2>Recommended</h2>
