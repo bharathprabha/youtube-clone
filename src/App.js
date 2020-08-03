@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header.jsx";
 import Posts from "./components/Posts";
@@ -10,6 +10,11 @@ import { Video } from "./components/Video";
 import { VideoProvider } from "./context/VideoContext";
 
 function App() {
+  useEffect(() => {
+    alert(
+      "Thanks for visiting my project, you can watch videos and add videos in this app"
+    );
+  }, []);
   return (
     <div className="App">
       <Router>

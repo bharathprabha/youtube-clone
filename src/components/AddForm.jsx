@@ -26,7 +26,7 @@ const AddForm = () => {
         const progress = Math.round(
           (snapshot.bytesTransfered / snapshot.totalBytes) * 100
         );
-        no = no + 10;
+        no = no + 5;
         setProgress(no);
       },
       (error) => {
