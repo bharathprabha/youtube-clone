@@ -10,6 +10,9 @@ const Posts = () => {
     db.collection("videos").onSnapshot((snopshot) => {
       setVideos(snopshot.docs.map((doc) => ({ post: doc.data(), id: doc.id })));
     });
+    alert(
+      "Thanks for visiting my project, you can watch videos and add videos in this app"
+    );
   }, []);
   return (
     <div className="posts">

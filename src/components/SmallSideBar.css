@@ -1,3 +1,10 @@
 .smallsidebar {
   background-color: #363535;
+  width: 100%;
+  color: aqua;
+}
+
+.smallsidebar > a {
+  color: rgb(238, 232, 232);
+  text-decoration: none;
 }

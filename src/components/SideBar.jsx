@@ -25,6 +25,7 @@ const SideBar = () => {
   return (
     <div className="SideBar">
       <SideBarRow selected Icon={HomeIcon} title={"Home"} />
+      <p>The following links will not work</p>
       <SideBarRow Icon={WhatshotIcon} title={"Trending"} />
       <SideBarRow Icon={SubscriptionsIcon} title={"Sub"} />
       <hr />

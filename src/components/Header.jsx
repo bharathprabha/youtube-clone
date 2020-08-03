@@ -5,6 +5,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import HomeIcon from "@material-ui/icons/Home";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
@@ -15,6 +16,11 @@ const Header = () => {
       <div className="header__menu">
         <Link to="/sidebar">
           <MenuIcon className="header__material__icon" />
+        </Link>
+      </div>
+      <div className="header__hone">
+        <Link to="/">
+          <HomeIcon className="header__material__icon" />
         </Link>
       </div>
       <div className="header__input">
@@ -28,7 +34,7 @@ const Header = () => {
             variant="contained"
             color="secondary"
           >
-            Secondary
+            Add Videos
           </Button>
         </Link>
 
@@ -40,7 +46,7 @@ const Header = () => {
       <div className="header__addbutton">
         <Link to="/addform">
           <Button variant="contained" color="secondary">
-            Secondary
+            Add Videos
           </Button>
         </Link>
       </div>

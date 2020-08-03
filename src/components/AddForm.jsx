@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./AddForm.css";
 import { Button } from "@material-ui/core";
 import { db, storage } from "../firebase.js";
@@ -8,12 +8,16 @@ const AddForm = () => {
   const [video, setvideo] = useState(null);
   const [Progress, setProgress] = useState(0);
 
+  useEffect(() => {
+    alert("Please upload small sized video file");
+  }, []);
+
   const handleChange = (e) => {
     if (e.target.files[0]) {
       setvideo(e.target.files[0]);
     }
   };
-
+  let no = 0;
   const handleUpload = () => {
     const uploadTask = storage.ref(`videos/${video.name}`).put(video);
     uploadTask.on(
@@ -22,7 +26,8 @@ const AddForm = () => {
         const progress = Math.round(
           (snapshot.bytesTransfered / snapshot.totalBytes) * 100
         );
-        setProgress(progress);
+        no = no + 10;
+        setProgress(no);
       },
       (error) => {
         alert(error.message);
@@ -40,7 +45,9 @@ const AddForm = () => {
             setProgress(0);
             setTitle("");
             setvideo(null);
-            alert("Successfully uploaded");
+            alert(
+              "Successfully uploaded. To see your video go to home, you will find your video"
+            );
           });
       }
     );
@@ -55,9 +62,8 @@ const AddForm = () => {
         onChange={(e) => setTitle(e.target.value)}
         value={Title}
       />
-      {/* <label>Add your chennal name</label>   */}
-      {/* <input type="text" placeholder="channel" onChange={} /> */}
-      <progress className="addform__progress" value={Progress} max="100" />
+      {/* <progress className="addform__progress" value={Progress} max="100" /> */}
+      <p> uploaded status: {Progress} %</p>
       <input type="file" onChange={handleChange} />
       <Button
         onClick={handleUpload}

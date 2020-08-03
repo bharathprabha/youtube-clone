@@ -15,6 +15,9 @@
   flex-direction: row;
   margin-left: 15px;
 }
+.videCards__link > a {
+  text-decoration: none;
+}
 .VideoCard__text > h4 {
   color: white;
   font-size: 14px;

@@ -25,12 +25,17 @@ const SmallSideBAr = () => {
   return (
     <div className="smallsidebar">
       <Link to="/">
-        <SideBarRow selected Icon={HomeIcon} title={"Home"} />
+        <SideBarRow Icon={HomeIcon} title={"Home"} />
+      </Link>
+      <Link to="/">
+        <SideBarRow Icon={WhatshotIcon} title={"Trending"} />
+      </Link>
+      <Link to="/">
+        <SideBarRow Icon={SubscriptionsIcon} title={"Sub"} />
       </Link>
 
-      <SideBarRow Icon={WhatshotIcon} title={"Trending"} />
-      <SideBarRow Icon={SubscriptionsIcon} title={"Sub"} />
       <hr />
+      <p>The following links will not work</p>
       <SideBarRow Icon={LibraryAddIcon} title={"Library"} />
       <SideBarRow Icon={HistoryIcon} title={"History"} />
       <SideBarRow Icon={VideoLibraryIcon} title={"Your videos"} />
