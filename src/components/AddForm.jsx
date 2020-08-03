@@ -40,6 +40,7 @@ const AddForm = () => {
             setProgress(0);
             setTitle("");
             setvideo(null);
+            alert("Successfully uploaded");
           });
       }
     );

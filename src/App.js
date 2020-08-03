@@ -6,6 +6,7 @@ import SideBar from "./components/SideBar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SmallSideBAr from "./components/SmallSideBAr";
 import AddForm from "./components/AddForm";
+import { Video } from "./components/Video";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/addform">
               <AddForm />
+            </Route>
+            <Route path="/video">
+              <Video />
             </Route>
           </div>
         </Switch>
